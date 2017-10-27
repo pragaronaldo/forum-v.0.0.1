@@ -1,25 +1,20 @@
 <html>
 <body background="img1.png">
-<style>
-p {
-	font-family:Helvetica;
-   font-size:22px;
-   font-style:normal;
-   font-weight:normal;
-}
-h6 {
 
-	font-family:Helvetica;
-   font-size:22px;
-   font-style:normal;
-   font-weight:normal;
-}
 ul {
 	list-style-image:url("check.png");
 }
 </style>
 <?php
 session_start();
+include ("header.php");
+
+
+echo "<p>welcome ", $_SESSION['name'], '...';
+echo " here are some guidelines you must read before posting questions and answers</p>";
+?>
+<h6>
+<ul>session_start();
 include ("header.php");
 
 
